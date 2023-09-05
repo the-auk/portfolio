@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <div className={styles.header}>
-        <div className={styles.button1}>
+        <a target="_blank" href='https://github.com/the-auk' className={styles.button1}>
           Github
-        </div>
+        </a>
         <div className={styles.name}>
           <span>Tanmay</span><span>Siwach</span>
         </div>
