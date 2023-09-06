@@ -1,8 +1,21 @@
+"use client";
 import styles from './page.module.css'
 import Carousel from './carousel'
+import Project from './project'
 import Head from 'next/head'
+import {useState} from 'react';
 
 export default function Home() {
+  const [active, setActive] = useState(false);
+  const [projectId, setProjectId] = useState(null);
+  const handleClickOpen = (propsId) =>{
+    setProjectId(propsId)
+    setActive(true)
+  }
+  const handleClickClose = () =>{
+    setProjectId(null)
+    setActive(false)
+  }
   return (
     <div className={styles.main}>
       <div className={styles.header}>
@@ -16,7 +29,8 @@ export default function Home() {
           LinkedIn
         </a>
       </div>
-    <Carousel />
+    <Carousel handleClickOpen={handleClickOpen} />
+    {active && projectId!=null && <Project handleClickClose={handleClickClose} projectId={projectId} />}
     <Head>
       <title>Tanmay Siwach</title>
     </Head>

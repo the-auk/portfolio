@@ -1,0 +1,130 @@
+.project{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.9);
+}
+.projectStructure{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.animationOut{
+    animation: slideOut 0.35s linear ;
+}
+.animationIn{
+    animation: slideIn 0.35s linear ;
+}
+@keyframes slideIn {
+    0%{
+        top: 50vh;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes slideOut {
+    0%{
+        top: 0vh;
+        opacity: 1;
+    }
+    100%{
+        top: 50vh;
+        opacity: 0;
+    }
+}
+.folderParent{
+    position: relative;
+    width: 100%;
+    filter: url(#round);
+    z-index: 101;
+}
+.folder{
+    content:"";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 5vh;
+    background-color: antiquewhite;
+    clip-path: polygon(60% 0, 60% 4vh, 100% 4vh, 100% 100%, 0 100%, 0 0);
+    padding: 10px;
+    padding-top: 6vh;
+    box-sizing: border-box;
+}
+.cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6vh;
+    height:10vh;
+    color: black;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    margin-top: 3vh;
+    background-color: antiquewhite;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+}
+.heroProject{
+    width: 100%;
+    height: calc(90vh - 20px);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-sizing: border-box;
+    width: 440px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    z-index: 10;
+    border-radius: 10px;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    z-index: 99;
+}
+.button2{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 120px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:300;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  .button2:hover{
+    background-color: white;
+    color: black;
+  }
+.flt_svg {
+    visibility: hidden; 
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
