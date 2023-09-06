@@ -19,7 +19,10 @@ export default function Project(props) {
         </div>
     <div className={styles.folderParent}>
       <div className={styles.folder}>
-        <div style={{backgroundImage:'url("/garage.png")'}} className={styles.heroProject}>
+        <div className={styles.folderFront}>
+        <div className={styles.heroProject}>
+          <div className={styles.absoluteBgWrapper}>
+          <div style={{backgroundImage:'url("/garage.png")'}} className={styles.absoluteBg} /></div>
             <div className={styles.header}>
                 <div className={styles.projectName}>
                     Testing Name
@@ -29,6 +32,10 @@ export default function Project(props) {
                 </div>
             </div>
         </div>
+        <div className={styles.projectText}>
+          Project Details Go Here innit. 
+        </div>
+      </div>
       </div>
       <svg className={styles.flt_svg} xmlns="http://www.w3.org/2000/svg">
         <defs>
