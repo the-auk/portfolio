@@ -1,9 +1,21 @@
 'use client';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./project.module.css";
+import {projects} from "./projectsData";
 
 export default function Project(props) {
     const [animation, setAnimation] = useState(`${styles.animationIn} ${styles.projectStructure}`);
+    const [projectData, setProjectData] = useState(null);
+
+    useEffect(()=>{
+      let temp = {
+        'name':projects[props.projectId].name,
+        'description':projects[props.projectId].description,
+        'url':projects[props.projectId].url
+      }
+      setProjectData(temp);
+    }, [])
+
     const handleClose = () =>{
       setAnimation(`${styles.animationOut} ${styles.projectStructure}`)
       setTimeout(()=>{
@@ -22,10 +34,10 @@ export default function Project(props) {
         <div className={styles.folderFront}>
         <div className={styles.heroProject}>
           <div className={styles.absoluteBgWrapper}>
-          <div style={{backgroundImage:'url("/garage.png")'}} className={styles.absoluteBg} /></div>
+          <div style={{backgroundImage:`url(${projectData?.url})`}} className={styles.absoluteBg} /></div>
             <div className={styles.header}>
                 <div className={styles.projectName}>
-                    Testing Name
+                    {projectData?.name}
                 </div>
                 <div className={styles.button2}>
                     Visit
@@ -33,7 +45,7 @@ export default function Project(props) {
             </div>
         </div>
         <div className={styles.projectText}>
-          Project Details Go Here innit. 
+          {projectData?.description} 
         </div>
       </div>
       </div>
