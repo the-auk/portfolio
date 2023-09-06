@@ -10,10 +10,10 @@
     height: 100%;
     box-sizing: border-box;
     padding: 10px;
-    column-gap: 20px;
+    /* column-gap: 20px; */
     display: inline-flex;
     flex-direction: row;
-    animation: slide 25s linear infinite;
+    animation: slide 15s linear infinite;
     position: absolute;
     left: 0;
 }
@@ -22,7 +22,7 @@
       left: 0;
     }
     100% {
-      left: -5270px;
+      left: -5290px;
     }
   }
 .track1{
@@ -32,13 +32,16 @@
     column-gap: 20px;
     position: relative;
     box-sizing: border-box;
+    padding-left: 20px;
 }
 .track2{
     height: 100%;
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+    position: relative;
     box-sizing: border-box;
+    padding-left: 20px;
 }
 .carouselItem2{
     height: 100%;
