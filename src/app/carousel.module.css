@@ -13,7 +13,7 @@
     /* column-gap: 20px; */
     display: inline-flex;
     flex-direction: row;
-    animation: slide 15s linear infinite;
+    animation: slide 20s linear infinite;
     position: absolute;
     left: 0;
 }
