@@ -46,6 +46,7 @@
     flex-direction: row;
 }
 .cross{
+    background-color: red;
     position: absolute;
     top: 0;
     right: 0;
@@ -55,12 +56,16 @@
     z-index: 102;
     display: flex;
     justify-content: center;
-    padding-top: 2vh;
+    align-items: center;
+    padding-bottom:5vh;
     margin-top: 6vh;
     background-color: #73d0fb;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     cursor: pointer;
+}
+.crossSvg{
+    width: 30px;
 }
 .folder{
     content:"";
