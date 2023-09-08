@@ -5,9 +5,9 @@ export const projects={
         'url':'/card.png'
     },
     102:{
-        'name':'RealTime Card Game',
-        'description':'Built on TypeScript with React, Node, Apollo GraphQL and Websockets.',
-        'url':'/card.png'
+        'name':'JPT Neighborhood Security App',
+        'description':'Built on React Native, Node, Expo, Python, GCP.',
+        'url':'/jpt1.jpg'
     },
     103:{
         'name':'Anti Spotify',
@@ -15,9 +15,9 @@ export const projects={
         'url':'/spotify.png'
     },
     104:{
-        'name':'RealTime Card Game',
-        'description':'Built on TypeScript with React, Node, Apollo GraphQL and Websockets.',
-        'url':'/card.png'
+        'name':'Vritra.us',
+        'description':'Online marketplace built on Shopify plus with some custom code.',
+        'url':'/vritra.jpg'
     },
     105:{
         'name':'Theta Chi',
@@ -25,9 +25,9 @@ export const projects={
         'url':'/theta.png'
     },
     106:{
-        'name':'RealTime Card Game',
-        'description':'Built on TypeScript with React, Node, Apollo GraphQL and Websockets.',
-        'url':'/card.png'
+        'name':'Tourism App',
+        'description':'Built on JavaScript with React Native, Node, Rest and PostgreSQL.',
+        'url':'/tourism.jpg'
     },
     107:{
         'name':'The Garage',
