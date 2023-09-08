@@ -41,9 +41,9 @@ export default function Project(props) {
                 <div className={styles.projectName}>
                     {projectData?.name}
                 </div>
-                <div className={styles.button2}>
+                <a target="_blank" href={projectData?.visitUrl} className={styles.button2}>
                     Visit
-                </div>
+                </a>
             </div>
         </div>
         <div className={styles.projectText}>
