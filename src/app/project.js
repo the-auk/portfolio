@@ -11,7 +11,8 @@ export default function Project(props) {
       let temp = {
         'name':projects[props.projectId].name,
         'description':projects[props.projectId].description,
-        'url':projects[props.projectId].url
+        'url':projects[props.projectId].url,
+        'visitUrl':projects[props.projectId].visitUrl
       }
       setProjectData(temp);
     }, [])
