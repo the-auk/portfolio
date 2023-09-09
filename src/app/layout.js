@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter, Montserrat } from 'next/font/google'
-import localFont from 'next/font/local';
+import {Analytics} from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({subsets: ['latin'],variable:'--font-mont'})
@@ -14,7 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>{children}
+      <Analytics />
+      </body>
     </html>
   )
 }
